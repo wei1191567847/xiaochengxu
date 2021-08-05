@@ -1,0 +1,97 @@
+{
+	"pages": [
+		{
+			"path":"pages/hot/hot",
+			"style":
+			{
+				"navigationBarTitleText":"首页",
+				"enablePullDownRefresh":false
+			}
+		}
+				
+	    ,{
+            "path" : "pages/hot-video/hot-video",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	//全局配置 优先级较低
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		},
+		"backgroundColorTop":"#FFFFFF"
+	},
+	
+	"tabBar": {
+	    "color": "#7A7E83",
+	    "selectedColor": "#3cc51f",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/hot/hot",
+	        "iconPath": "./static/tab-icons/hot.png",
+	        "selectedIconPath": "./static/tab-icons/hot-active.png",
+	        "text": "首页"
+	    }, 
+		{
+	        "pagePath": "pages/hot-video/hot-video",
+	        "iconPath": "./static/tab-icons/hot-video.png",
+	        "selectedIconPath": "./static/tab-icons/hot-video-active.png",
+	        "text": "视频"
+	    },
+		{
+		    "pagePath": "pages/my/my",
+		    "iconPath": "./static/tab-icons/my.png",
+		    "selectedIconPath": "./static/tab-icons/my-active.png",
+		    "text": "我的"
+		}
+		]
+	},
+	"subPackages":[{
+		"root":"subpkg",    //分包 名称
+		"name":"sub-1",   //别名
+		"pages":[{
+			"path":"pages/search-blog/search-blog",
+			"style":{
+				"navigationBarTitleText":"热门搜索",
+				"app-plus":{
+					"bounce":"none"  //可选  是否禁止ios回弹和Anordid触顶触底的弧形阴影,默认允许
+				}
+			}
+		},
+		{
+			"path":"pages/detail/detail",
+			"style":{
+					"navigationBarTitleText":"文章详情"
+				}
+			}
+		]
+	}]
+}

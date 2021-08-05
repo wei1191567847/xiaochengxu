@@ -1,0 +1,1 @@
+<view class="ranking data-v-63342c72"><image class="ranking-bg-img data-v-63342c72" src="{{getRankBg}}" mode></image><text class="ranking-text data-v-63342c72">{{rank}}</text></view>

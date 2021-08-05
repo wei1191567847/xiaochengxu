@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "ranking": "/components/ranking/ranking"
+  },
+  "component": true
+}
